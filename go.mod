@@ -2,7 +2,10 @@ module github.com/alextanhongpin/go-oauth2
 
 go 1.20
 
-require golang.org/x/oauth2 v0.7.0
+require (
+	github.com/golang-jwt/jwt/v5 v5.0.0
+	golang.org/x/oauth2 v0.7.0
+)
 
 require (
 	github.com/golang/protobuf v1.5.2 // indirect

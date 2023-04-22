@@ -56,7 +56,8 @@ func TestJWTFetch(t *testing.T) {
 		if err != nil {
 			t.Error(err)
 		}
-		t.Logf("values: %#v\n", values)
+		t.Log(string(b))
+		_ = values
 
 		w.Header().Set("Content-Type", "application/json")
 		w.Write([]byte(`{
